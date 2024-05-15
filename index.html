@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+   
+    <title>Verkefni 7</title>
+</head>
+<body>
+    <header>
+        <div class="innra">
+            <div class="logo">
+                <div>
+                    <img class="kvikun" src="Myndir/kruser-logo.png">
+                </div>
+            </div>
+
+            <nav class="faera">
+                <li><span><a href="#Staður">Um Okkur</a></span></li>
+                <li><span><a href="#Staður">Staðsetning</a></span></li>
+                <li><span><a href="#Hafðu-Samband">Dagskrá</a></span></li>
+                <li><span><a href="#Hafðu-Samband" class="button">Hafðu samband</a></span></li>
+
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <img class="yfirlistmynd" src="Myndir/Krúser3.jpg" >
+    </section>
+
+    <h2 id="Staður" class="okkur">Um Okkur</h2>
+    <section  class="dalkar">
+        <div>
+            <div class="lysing">Stofnun</div>
+            <div>Bílaklúbburinn Krúser var stofnaður formlega í Mars 2006.</div>
+        </div>
+        
+        <div>
+            <div class="lysing">Samkomur</div>
+            <div>Samkomur eru haldnar öll fimmtudagskvöld í húsakynnum Krúser að Höfðabakka 9 og hefjast kl. 20.00. Ef vel viðrar mæta félagar á glæsivögnum sínum og taka rúnt um bæinn á eftir.</div>
+        </div>
+        
+        <div>
+            <div class="lysing">Markmið</div>
+            <div>Að viðhalda klassískum bílum og stuðla að varðveislu þeirra. Að standa vörð um hagsmuni bíleigenda og efla kynni þeirra á milli. Að stuðla að góðakstri innan félagsins og góðri umgengni um bíla og sögu þeirra. Að efla samstöðu og kynni milli annarra sambærilegra klúbba.</div>
+        </div>
+        
+        <div>
+            <div class="lysing">Samstarf</div>
+            <div>Krúser vinnur náið með og á gott samstarf við N1 og Vátryggingarfélag Íslands, þar sem meðlimum er boðið upp á ódýrara eldsneyti og tryggingar á góðum kjörum.</div>
+        </div>
+    </section>
+    
+
+
+    <section class="dalkar3">
+        <picture>
+        <img src="Myndir/krúser1.jpg" >
+        </picture>
+
+        <picture>
+        <img src="Myndir/Kruser9.jpg" >
+        </picture>
+
+        <picture>
+        <img src="Myndir/kruser4.jpg" >
+        </picture>
+    </section>
+
+
+<section id="Hafðu-Samband" class="dalk3">
+    <form>
+        <label for="fname">Fullt nafn</label required><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Símanúmer</label><br>
+        <input type="number" id="lname" name="lname"><br>
+
+        <label for="lname">Tölvupóstur</label required><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="Dagsetning">Dagsetning</label>
+  <input type="date" id="Dagsetning" name="Dagsetning">
+  <input type="submit">
+
+        <p>Sláðu inn texta</p>
+        <form action="/action_page.php">
+            <p><label for="w3review"></label></p>
+            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+
+            <br>
+
+            <input type="submit" value="Submit">
+          </form>
+
+          <section>
+            <div class="dagskra">
+                <h2>Dagskrá</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Júní</td>
+                        <td>Júlí</td>
+                        <td>Ágúst</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Júní">6-Júní 20:00</td>
+                        <td data-label="Júlí">4-Júlí 20:00</td>
+                        <td data-label="Ágúst">8-Ágúst 20:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Júní">13-Júní 20:00</td>
+                        <td data-label="Júlí">11-Júlí 20:00</td>
+                        <td data-label="Ágúst">15-Ágúst 20:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Júní">20-Júní 20:00</td>
+                        <td data-label="Júlí">18-Júlí 20:00</td>
+                        <td data-label="Ágúst">22-Ágúst 20:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+      </form>
+    </section>
+</body>
+</html>
