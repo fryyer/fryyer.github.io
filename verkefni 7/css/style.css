@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.kvikun{
+    animation-name: hreyfing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes hreyfing {
+    0%{scale: 0.7;}
+    50%{scale: 1;}
+    70%{scale: 0.7;}
+    90%{scale: 1;}
+    100%{scale: 0.7;}
+}
+
+.dalk3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+body{
+    max-width: 100%;
+    max-height: 100%;
+    font-family: Reddit Sans;
+  }
+
+.yfirlistmynd{
+    display: grid;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+}
+
+header .innra{
+    width: 1300px;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .logo img{
+    height: 50px;
+    margin-top: 5px; 
+}
+
+header nav{
+    float: right;
+    height: 100%;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav a{
+    color: #101010;
+}
+
+header nav .button{
+    background-color: #1ab26b;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.faera{
+    margin-right: 30px;
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.dalkar3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1265px;
+}
+
+.okkur{
+    text-align: center;
+}
+
+.Bakgrunnur{
+    background-color: rgb(29, 41, 81);
+}
+
+.lysing{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dalkar{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+
+    justify-items: center;
+    grid-column-gap: 200px;
+    grid-row-gap: 20px;
+}   
+
+.dalkar > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dagskra {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dagskra h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px; 
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .dalkar{
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        padding: 10px;
+    
+        grid-column-gap: 200px;
+        grid-row-gap: 20px;
+    }   
+}
+
+@media screen and (max-width: 800px) {
+    .dalkar3{
+        display: grid;
+        grid-template-columns: 1fr ;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .dalkar3{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .dalkar3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+    }
+}
+
+@media  screen and (max-width: 760px) {
+
+    thead{
+        display: none;
+    }
+ 
+    td{
+        display: block;
+        text-align: right;
+    }
+ 
+    tbody td::before{
+        content: attr(data-label);
+        float: left;
+    }
+ }
